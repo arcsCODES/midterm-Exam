@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-DIVERSITY Policianos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h3 {
+            color: #004d40;
+        }
+        h2 {
+            color: #004d40;
+        }
+        #coffeebliss{
+            color: #004d40;
+        }
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease; /* Global transition for smooth animations */
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f1f1f1; /* Light background for modern look */
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling */
+            padding-top: 60px; /* Adjust this value to match the height of your nav */
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #00796b; /* A teal color for the nav bar */
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed; /* Fixed position */
+            top: 0; /* Stick to top */
+            left: 0; /* Ensure it stays aligned */
+            width: 100%; /* Full width */
+            z-index: 1000; /* Ensure it's on top */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 20px;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0288d1;  /* Hover color */
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        /* Sections styling */
+        section {
+            padding: 50px 30px;
+            margin: 30px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1.5s forwards; /* Fade-in animation */
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h1 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #004d40; /* Dark teal color for headings */
+            font-weight: bold;
+        }
+
+        section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            transition: transform 0.3s ease; /* Smooth table hover effect */
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #00796b;
+            color: white;
+            font-size: 18px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #e0f2f1;
+            transform: translateY(-2px); /* Hover effect for table row */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d40;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Button Styles (For added buttons, e.g., in "Products" or "Store" sections) */
+        .btn {
+            padding: 12px 30px;
+            background-color: #0288d1;
+            color: white;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0277bd;
+            transform: scale(1.05); /* Slight zoom for buttons */
+        }
+
+        /* Responsive Design (For smaller screens) */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            section h1 {
+                font-size: 26px;
+            }
+
+            table th, table td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#finance">Finance</a></li>
+            <li><a href="#consultancy">Consultancy</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <center><h1 id="coffeebliss">Coffee Bliss Cube</h1>
+    <img src="logo.png" width="200" height="200"></center>
+
+    <!--PROFILE SECTION-->
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Profile</h1>
+        <p>Name: PRINCE RYAN R. POLICIANOS<br>Section: 11-DIVERSITY</p>
+        <img src="profile.jpg" width="200" height="200">
+    </section>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Home</h1>
+        <p>“Coffee Bliss Cubes” is a product that was developed by a team of five students to come up with a deliciously enjoyable coffee jelly product. The name reflects what makes our product special “bliss” captures the rich and satisfying taste of coffee, while “cubes” highlight the jelly’s smooth and bite sized texture. Unlike other regular coffee drinks, the product introduces the bold taste of coffee into this chewy refreshing experience that a jelly cube presents. Preparing with good-quality ingredients, the serving should meet the best quality of both flavors and textures combined, hence giving Coffee Bliss Cubes something that is definitely worth trying. 
+            <br><br>We will promote our coffee jelly through word-of-mouth, social media marketing, and direct selling within the school. Engaging posts and appealing visuals will be shared online to attract attention and generate interest. We will also use posters and in-person recommendations to introduce our product to more students and faculty. By maintaining a strong presence and interacting with potential customers, we aim to build excitement and encourage more people to try our coffee jelly. . 
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About</h1>
+        <p>We are a company that values innovation, customer satisfaction, and sustainability. And we
+            create a tasty and affordable coffee jelly that offers a refreshing way to enjoy coffee, providing a unique and satisfying treat for anyone looking for something different.
+            <br><br>Our goal is to make our coffee jelly a well-recognized product within the school community. We understand that standing out can be challenging, but we are determined to overcome this by ensuring our product is of high quality and enjoyable. Through a creative and customer-friendly approach, we aim to provide a satisfying experience that encourages customers to continue supporting our business. With consistent effort and attention to detail, we aim to build a solid reputation and create a positive impression among students and staff alike. 
+        </p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h1>Products</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Choco and milk Coffee</td>
+                    <td>A product that is rich for your energy</td>
+                    <td>25 Php</td>
+                </tr>
+                <tr>
+                    <td>Milk Coffee</td>
+                    <td>The original product of our company</td>
+                    <td>25 Php</td>
+                </tr>
+                <tr>
+                    <td>Milo Coffee</td>
+                    <td>Rich with pure milk</td>
+                    <td>25 Php</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store">
+        <h1>Store</h1>
+        <p>Visit our store for a variety of products at great prices.</p>
+        <button class="btn">Visit Store</button>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations">
+        <h1>Location</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Philippine Women's College of Davao
+                    </td>
+                    <td>University Avenue, Juna Subdivision, Matina, Davao City</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Finance Section -->
+    <section id="finance">
+        <h1>Finance</h1>
+        <p>At Coffee Bliss Cube, we believe that great product isn’t just a beverage it’s an investment in quality, sustainability, and long-term satisfaction. Our product are carefully sourced from the world’s best-growing regions, ensuring that every cup delivers unmatched flavor and aroma. By choosing our product, you're not just enjoying an exceptional product, you're also supporting sustainable farming practices and ethical trade partnerships that benefit both farmers and the environment.
+            <br><br><h2>Why Choose Coffee Bliss Cube?</h2>
+            <br><h3><b>1. Product</b></h3>Our company offers high-quality coffee jelly, crafted to provide a refreshing and unique experience. Made with premium coffee and carefully prepared gelatin, our coffee jelly delivers a smooth, satisfying texture and bold coffee flavor. It’s available in different sizes, making it perfect for any occasion whether as a standalone treat or added to desserts and beverages. The versatile nature of our coffee jelly makes it an ideal choice for coffee enthusiasts looking for something new, delicious, and convenient.
+            <br><br><h3><b>2. Market Size</b></h3>Our customers include students, teachers, staff, guests, and friends from the Philippine Women’s College (PWC). With a community of over 1,000 potential buyers, we anticipate many will try our coffee jelly either for themselves or as a treat for others. If 30% of them purchase, that’s over 300 sales. Given that our coffee jelly is affordable and offers a unique experience, we expect some customers to make repeat purchases, further increasing our sales. 
+            <br><br><h3><b>3. Customers Requirements</b></h3>Customers want a unique and refreshing coffee experience through our coffee jelly, which must be affordable, high-quality, and convenient. They seek a product that provides a distinct, satisfying texture and flavor, with consistent quality across every serving. Additionally, the product should be easy to store and enjoy, fitting into the busy lifestyles of students and professionals alike. Meeting these needs is essential for building trust and loyalty in our market. 
+        </p>
+    </section>
+
+    <!-- Consultancy Section -->
+    <section id="consultancy">
+        <h1>Consultancy</h1>
+        <p>At Coffee Bliss Cube, we offer tailored consultancy services designed to help businesses in the coffee industry enhance their operations, improve customer satisfaction, and drive growth. Whether you're a cafe owner, restaurant, or corporate office, we work closely with you to create customized solutions that align with your unique needs and goals. Our expertise covers everything from selecting the perfect coffee beans and optimizing brewing methods to developing a compelling coffee menu that delights your customers. We also prioritize sustainability, guiding you on ethical sourcing and reducing environmental impact. Beyond operational strategies, we offer training programs to ensure your team delivers exceptional coffee consistently, as well as branding and marketing strategies to help you stand out in a competitive market. With our support, you’ll improve efficiency, increase profitability, and create a memorable coffee experience that keeps customers coming back. Let Coffee Bliss Cube help take your coffee business to the next level.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Coffee Bliss Cube. All rights reserved.</p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">TikTok</a></p>
+    </footer>
+    
+</body>
+</html>
